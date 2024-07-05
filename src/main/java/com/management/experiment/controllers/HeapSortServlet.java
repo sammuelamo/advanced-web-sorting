@@ -31,7 +31,7 @@ public class HeapSortServlet extends HttpServlet {
             // Sort the array using Heap Sort
             int[] sortedNumbers = SortingAlgorithms.heapSort(numbers);
 
-            // Prepare JSON response
+
             JsonObject responseJson = new JsonObject();
             JsonArray sortedArray = new JsonArray();
             for (int num : sortedNumbers) {
@@ -43,7 +43,7 @@ public class HeapSortServlet extends HttpServlet {
             String contextPath = request.getContextPath();
             String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + contextPath;
 
-            // Add HATEOAS links
+            //HATEOAS links
             JsonArray linksArray = new JsonArray();
             JsonObject selfLink = new JsonObject();
             selfLink.addProperty("rel", "self");

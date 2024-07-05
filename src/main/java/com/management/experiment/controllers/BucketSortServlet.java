@@ -50,7 +50,7 @@ public class BucketSortServlet extends HttpServlet {
             String contextPath = request.getContextPath();
             String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + contextPath;
 
-            // Add HATEOAS links
+            // HATEOAS links
             JsonArray linksArray = new JsonArray();
             JsonObject selfLink = new JsonObject();
             selfLink.addProperty("rel", "self");
@@ -72,7 +72,7 @@ public class BucketSortServlet extends HttpServlet {
             mergeSortLink.addProperty("href", basePath + "/sort/merge");
             linksArray.add(mergeSortLink);
 
-            // Add more links as needed
+
             responseJson.add("links", linksArray);
 
             // Set response content type to application/json and write the response
