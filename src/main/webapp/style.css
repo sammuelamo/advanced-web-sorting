@@ -2,8 +2,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #333; /* Dark background color */
-    color: #fff; /* Light text color for better readability */
+    background-color: #333;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@ body {
 
 h1, h2 {
     text-align: center;
-    color: #fff; /* Light text color */
+    color: #4CAF50; /* Adjusted color for better visibility */
 }
 
 form {
@@ -29,19 +29,19 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #ccc; /* Lighter color for labels */
+    color: #777; /* Adjusted label color for contrast */
 }
 
 input[type="text"], select {
-    width: 100%;
+    width: calc(100% - 18px); /* Adjusted input width */
     padding: 8px;
     margin: 5px 0 15px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
-    background-color: #444; /* Darker input background */
-    color: #fff; /* Light text color */
+    background-color: #444;
+    color: #fff;
 }
 
 input[type="button"] {
@@ -59,7 +59,7 @@ input[type="button"]:hover {
     background-color: #45a049;
 }
 
-.result-container {
+.result-container, .links-container {
     margin-top: 20px;
     border-top: 1px solid #ddd;
     padding-top: 10px;
@@ -68,13 +68,10 @@ input[type="button"]:hover {
 #result {
     white-space: pre-wrap;
     font-size: 14px;
-    color: #fff; /* Light text color */
 }
 
-.links-container {
-    margin-top: 20px;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
+#error {
+    margin-top: 10px;
 }
 
 #links {
@@ -88,7 +85,7 @@ input[type="button"]:hover {
 }
 
 #links a {
-    color: #4CAF50; /* Link color */
+    color: #4CAF50;
     text-decoration: none;
     font-weight: bold;
 }
