@@ -2,7 +2,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color for better readability */
     margin: 0;
     padding: 0;
 }
@@ -18,7 +19,7 @@ body {
 
 h1, h2 {
     text-align: center;
-    color: #333;
+    color: #fff; /* Light text color */
 }
 
 form {
@@ -28,7 +29,7 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #666;
+    color: #ccc; /* Lighter color for labels */
 }
 
 input[type="text"], select {
@@ -39,6 +40,8 @@ input[type="text"], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
+    background-color: #444; /* Darker input background */
+    color: #fff; /* Light text color */
 }
 
 input[type="button"] {
@@ -65,4 +68,31 @@ input[type="button"]:hover {
 #result {
     white-space: pre-wrap;
     font-size: 14px;
+    color: #fff; /* Light text color */
+}
+
+.links-container {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+#links {
+    list-style-type: none;
+    padding: 0;
+}
+
+#links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#links a {
+    color: #4CAF50; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#links a:hover {
+    text-decoration: underline;
 }
