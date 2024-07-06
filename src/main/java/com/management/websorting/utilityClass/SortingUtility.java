@@ -1,4 +1,4 @@
-package com.management.experiment.utilityClass;
+package com.management.websorting.utilityClass;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

@@ -1,7 +1,7 @@
-package com.management.experiment.controllers;
+package com.management.websorting.controllers;
 
-import com.management.experiment.utilityClass.AbstractSortServlet;
-import com.management.experiment.sortingService.SortingAlgorithms;
+import com.management.websorting.utilityClass.AbstractSortServlet;
+import com.management.websorting.sortingService.SortingAlgorithms;
 import jakarta.servlet.annotation.WebServlet;
 
 @WebServlet(name = "BucketSortServlet", value = "/sort/bucket")

@@ -1,4 +1,4 @@
-package com.management.experiment.sortingService;
+package com.management.websorting.sortingService;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
